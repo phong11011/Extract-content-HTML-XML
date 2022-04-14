@@ -11,8 +11,8 @@ app.get('/', (req, res) => {
     // our app.js file is present. In
     // this case __dirname is the root
     // folder of the project.
-    // res.sendFile(path.join(__dirname, '/public/index.html'));
-    res.send("<h1>HELLO</h1>")
+    res.sendFile(path.join(__dirname, '/public/index.html'));
+    // res.send("<h1>HELLO</h1>")
 });
 
 app.get('/products', (req, res) => {
